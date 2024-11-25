@@ -41,3 +41,11 @@
 3. Commit changes
 4. Push branch
 5. Create pull request
+
+## global
+1. /api/auth (admin)
+2. /api/users/auth (user)
+3. /api/coffee (cart)
+4. /api/product (product)
+5. /api/v4 (order)
+5. /api/v6 (pay)
