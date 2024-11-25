@@ -1,0 +1,39 @@
+{
+  "name": "coffee",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js",
+    "dev:home":"nodemon index.js",
+    "admin": "cd admin && npm run admin",
+    "user": "cd user && npm run user",
+    "order": "cd order && npm run order",
+    "cart": "cd cart && npm run cart",
+    "product": "cd product && npm run product",
+    "pay": "cd pay && npm run pay",
+    "dev": "concurrently \"npm run dev:home\" \"npm run dev:services\" ",
+    "dev:services": "concurrently \"npm run admin\" \"npm run pay\" \"npm run order\" \"npm run user\" \"npm run cart\" \"npm run product\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "amqp": "^0.2.7",
+    "amqplib": "^0.10.5",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^9.1.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "http-proxy-middleware": "^3.0.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.2",
+    "nodemon": "^3.1.7",
+    "paypal-rest-sdk": "^1.8.1",
+    "stripe": "^17.4.0",
+    "winston": "^3.17.0"
+  }
+}
