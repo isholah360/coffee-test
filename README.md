@@ -14,6 +14,7 @@
 - Express.js
 - Microservices Architecture
 - RabbitMQ
+- http-proxy-middleware was use run all the app in just one port
 
 ## Setup
 1. Clone repository
