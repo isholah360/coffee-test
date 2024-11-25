@@ -71,7 +71,7 @@ async function createOrder(req, res) {
   }
 }
 
-// 2. Get orders for the logged-in user
+
 async function getOrders(req, res) {
   const { userId } = req.body;
 
@@ -88,7 +88,7 @@ async function getOrders(req, res) {
   }
 }
 
-// 3. Get details of a specific order
+
 async function getOrderById(req, res) {
   const { id } = req.params;
 
